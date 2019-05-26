@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bombilla</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#encender").click(function(){
+                $("#bombilla").attr("src","pic_bulbon.gif");
+                //$("#bombilla").css("height", "700px");
+                $("#bombilla").height(300);
+            });
+
+            $("#apagado").click(function(){
+                $("#bombilla").attr("src","pic_bulboff.gif");
+                $("#bombilla").height(100);
+            });
+        });
+    
+    </script>
+
+</head>
+<body>
+    <button id="encender">Encender</button>
+    <button id="apagado" >Apagar</button>
+    <p><img id="bombilla"  src="pic_bulboff.gif"></p>
+</body>
+</html>

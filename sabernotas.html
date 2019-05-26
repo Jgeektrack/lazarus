@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 8 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var venta1 = parseInt(prompt("introduzca su nota"));
+            var venta2 = parseInt(prompt("introduzca su nota2"));       
+            var venta3 = parseInt(prompt("introduzca su nota 3"));
+            var venta4 = parseInt(prompt("introduzca su nota 4"));
+            var comision = (venta1+venta2+venta3)*0.6;
+            var trabajo = venta4*0.4;
+            var sueldo = trabajo+comision;
+
+            $("#comision").html(comision);        
+            ;
+        });
+    </script>
+</head>
+<body>
+    <h2>Calculador de comisiones y sueldos</h2>
+    <p>Su comisión es de :<span id="comision"></span>
+    <p>y su sueldo total es de : <span id="sueldo"></span></p>
+</body>
+</html>

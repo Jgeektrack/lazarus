@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 5 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          var america = prompt("Introduzca temperatura");
+          var mundo = ((america-32)*5/9).toFixed(2);
+
+          $("#mundo").html(mundo);
+
+        });
+    </script>
+</head>
+<body>
+    <h2>Conversor Fahrenheit a Celsius</h2>
+    <p>La temperatura es  <span id="mundo"></span>º 
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador de palabras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#boton").click(function () {
+                var a = 0;
+                var e = 0;
+                var i = 0;
+                var o = 0;
+                var u = 0;
+
+                var cadena = $("#texto").val();
+
+                for (var j = 0; j < cadena.length; j++) {
+                    var letra = cadena[j];
+
+                    if (letra == "a") {
+                        a++;
+                    }
+                    else if (letra == "e") {
+                        e++;
+                    }
+                    else if (letra == "i") {
+                        i++;
+                    }
+                    else if (letra == "o") {
+                        o++;
+                    }
+                    else if (letra == "u") {
+                        u++;
+                    }
+                }
+
+                $("#a").html("El número de A es:" + a);
+                $("#e").html("El número de E es:" + e);
+                $("#i").html("El número de I es:" + i);
+                $("#o").html("El número de O es:" + o);
+                $("#u").html("El número de U es:" + u);
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    
+    <input type="text" id="texto" val="Hello world!!">
+    <button id="boton">Contar palabras</button>
+    <p id="a"></p>
+    <p id="e"></p>
+    <p id="i"></p>
+    <p id="o"></p>
+    <p id="u"></p>
+</body>
+
+</html>

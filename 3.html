@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabla de multiplicar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#boton").click(function () {
+                var uno = 1;
+                var dos = 2;
+                var tres = 3;
+                var cuatro = 4;
+                var cinco = 5;
+                var seis = 6;
+                var siete = 7;
+                var ocho = 8;
+                var nueve = 9;
+                var diez = 10;
+
+                var cadena = $("#texto").val();
+
+
+                $("#uno").html(cadena+"X"+"1 ="+uno*cadena);
+                $("#dos").html(cadena+"X"+"2 ="+dos*cadena);
+                $("#tres").html(cadena+"X"+"3 ="+tres*cadena);
+                $("#cuatro").html(cadena+"X"+"4 ="+cuatro*cadena);
+                $("#cinco").html(cadena+"X"+"5 ="+cinco*cadena);
+                $("#seis").html(cadena+"X"+"6 ="+seis*cadena);
+                $("#siete").html(cadena+"X"+"7 ="+siete*cadena);
+                $("#ocho").html(cadena+"X"+"8 ="+ocho*cadena);
+                $("#nueve").html(cadena+"X"+"9 ="+nueve*cadena);
+                $("#diez").html(cadena+"X"+"10 ="+diez*cadena);
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    
+    <input type="text" id="texto" val="Hello world!!">
+    <button id="boton">Mostrar tabla</button>
+    <p id="uno"></p>
+    <p id="dos"></p>
+    <p id="tres"></p>
+    <p id="cuatro"></p>
+    <p id="cinco"></p>
+    <p id="seis"></p>
+    <p id="siete"></p>
+    <p id="ocho"></p>
+    <p id="nueve"></p>
+    <p id="diez"></p>
+</body>
+
+</html>

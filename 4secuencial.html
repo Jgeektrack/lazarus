@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio 4 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            /* parseint para hacer suma ya que si no solo lo junta */
+            var a = parseInt(prompt("Dime un número:"));
+            var b = parseInt(prompt("DIme otro número:"));
+
+            var suma = a+b;
+            var resta = a-b;
+            var div = a/b;
+            var multi = a*b;
+
+            $("#suma").html(suma);
+            $("#resta").html(resta);
+            $("#div").html(div);
+            $("#multi").html(multi);
+
+
+        });
+    </script>
+</head>
+<body>
+    <h2>Suma</h2>
+    <p>La suma es :  <span id="suma"></span>
+    
+        <h2>Resta</h2>
+    <p>La resta es : <span id="resta"></span>
+       
+
+        <h2>División</h2>
+    <p>La división es : <span id="div"></span>
+       
+        
+        <h2>Multiplicación</h2>
+    <p>La Multiplicacion es : <span id="multi"></span>
+        
+</body>
+</html>

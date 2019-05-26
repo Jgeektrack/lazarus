@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 9 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var precio = parseInt(prompt("introduzca el precio del producto"));
+            var descuento = precio*0.15;
+            var total = precio-descuento;
+    
+
+            $("#final").html(total);        
+        });
+    </script>
+</head>
+<body>
+    <h2>Calculador de descuentos</h2>
+    <p>el producto valdrá :<span id="final"></span>€
+</body>
+</html>

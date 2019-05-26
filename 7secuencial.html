@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 7 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var a = parseInt(prompt("introduzca un número"));
+            /*ParseInt ha de ir la I en mayuscula o no funciona de lo contrario*/
+            var horas = parseInt(a / 60);        
+            var minutos = a % 60;
+
+            $("#horas").html(horas);        
+            $("#minutos").html(minutos);
+
+        });
+    </script>
+</head>
+<body>
+    <h2>Conversor de minutos a horas</h2>
+     El resultado es:
+    <span id="horas"></span> horas y <span id="minutos"></span> minutos
+</body>
+</html>

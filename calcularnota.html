@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 6 JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var a = parseInt(prompt("Dígame un numero"));
+            var b = parseInt(prompt("Dime otro"));
+            var c = parseInt(prompt("Uno más guapa guapa y guapa"));
+            var suma=a+b+c;
+            var resultado = (suma/3).toFixed(2);
+            if(resultado>=5)
+                alert("Está aprobado")
+            else
+                alert("Está suspenso")
+
+            $("#resultado").html(resultado);
+
+
+        });
+    </script>
+</head>
+<body>
+    <h2>Media de nota</h2>
+    <p>La media es :  <span id="resultado"></span>
+</body>
+</html>
